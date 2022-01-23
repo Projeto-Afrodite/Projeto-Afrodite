@@ -39,34 +39,29 @@
         <br>
         </div>
 
-        <form method="post" action=""> <!--COLOCAR A LIBGUAGEM DO SERVICOR-->
+        <form method="post" action="../BackEnd/cadastro_cliente.php"> <!--COLOCAR A LIBGUAGEM DO SERVICOR-->
             <fieldset class="grupo">
                 <div class="campo">
                     <label for="nome"><strong>Nome:</strong></label>
                     <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
+                    
                     <label for="sobrenome"><strong>Sobrenome:</strong></label>
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o Sobrenome" required>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <div class="campo">
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o sobrenome" required>
+    
                     <label for="telefone"><strong>Telefone:</strong></label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="(DDD) 99999-9999">
-                </div>
-                <div class="campo">
+                    <input type="text" name="telefone" id="telefone" placeholder="(DDD) 99999-9999">
+            
                     <label for="email"><strong>E-mail:</strong></label>
-                    <input type="email" name="email" id="email" placeholder="Digite o E-mail">
-                </div>
-                <div class="campo">
+                    <input type="text" name="email" id="email" placeholder="Digite o E-mail">
+
                     <label for="nascimento"><strong>Data de Nascimento:</strong></label>
                     <input type="date" name="nascimento" id="nascimento">
                 </div>
             </fieldset>
 
         <div class="campo">
-            <label for=""><strong>Observações:</strong></label>
-            <textarea name="observacoes" id="observacoes" cols="30" rows="4"></textarea>
+            <label for="observacao"><strong>Observações:</strong></label>
+            <textarea type="text" name="observacao" id="observacao" cols="30" rows="4"></textarea>
         </div>
 
         <div>

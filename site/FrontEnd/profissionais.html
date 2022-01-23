@@ -39,7 +39,7 @@
         <br>
         </div>
 
-        <form action="">
+        <form action="../BackEnd/cadastro_profissional.php" method="post">
             <fieldset class="grupo">
                 <div class="campo">
                     <label for="nome"><strong>Nome:</strong></label>
@@ -54,7 +54,7 @@
             <fieldset>
                 <div class="campo">
                     <label for="telefone"><strong>Telefone:</strong></label>
-                    <input type="tel" name="telefone" id="telefone">
+                    <input type="text" name="telefone" id="telefone">
                 </div>
                 <div class="campo">
                     <label for="email"><strong>E-mail:</strong></label>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="campo">
                     <label for="cpf"><strong>CPF/CNPJ:</strong></label>
-                    <input type="text" name="cpf" id="cpf" required>
+                    <input type="text" name="cpf" id="cpf" pattern="[0-9]{11}" required>
                 </div>
                
             </fieldset>
