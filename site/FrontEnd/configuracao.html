@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFRODITE</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
     <header>
@@ -27,20 +28,55 @@
             </ul>
         </nav>
     </header>
-    <div class="cabecalho">
-        <h1>CONFIGURAÇÃO</h1>
-    
-        <P>CRIAR OS FORMULARIOS NECESSÁRIOS</P>
-    </div>
-    <main class="background-pages"> <!--Espaço para inserir o Background-->
+    <main class="background-pages"> <!--Espaço para inserir o Background--></main>
 
-    </main>
-    
+    <div id="formulario">
+        <div class="cabecalho">
+            <h1 id="titulo">DADOS DO SALÃO</h1><br>
+        </div>
+        
+        <form action="" method="post">
+            <fieldset>
+                <div class="campo">
+                    <label for="fantasia"><strong>Nome Fantasia:</strong></label>
+                    <input type="text" name="fantasia" id="fantasia" required>
+                </div>
+                <div class="campo">
+                    <label for="Social"><strong>Razão Social:</strong></label>
+                    <input type="text" name="social" id="social" required>
+                </div>
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone:</strong></label>
+                    <input type="tel" name="telefone" id="telefone">
+                </div>
+                <div class="campo">
+                    <label for="email"><strong>E-mail:</strong></label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="campo">
+                    <label for="cnpj"><strong>CNPJ:</strong></label>
+                    <input type="text" name="cnpj" id="cnpj" required>
+                </div>
+                <div class="campo">
+                    <label for="endereco"><strong>Endereço:</strong></label>
+                    <input type="text" name="endereço" id="endereco">
+                </div>
+            </fieldset>
+
+            <div>
+                <button class="botao" type="submit">Salvar</button>
+            </div>
+
+        </form>
+
+    </div>
+
     <script src="mobile-navebar.js"></script><!--Referenciando o arquivo em JavaScript-->
 </body>
 
 <footer>
-    <e-mail></e-mail>
+    <p>Direitos autorais | 2021 - PROJETO AFRODITE</p>
+    <a href="mailto:grupo05.salaodebeleza@gmail.com"> &#9993; grupo05.salaodebeleza@gmail.com</a>
 </footer>
 
 </html>
