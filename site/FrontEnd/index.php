@@ -50,21 +50,21 @@
                 
             </form>
     
-<?php
+    <?php
+
+    include "../BackEnd/conexao.php";
     if (isset($_POST['login'])) {
-        $login = $_POST['login'];
-        $senha = md5($_POST['senha']);
-        //var_dump($login, $senha);
-
-        include "../BackEnd/conexao.php";
-        $sql = "SELECT * FROM usuarios WHERE login = '$login'";
-        
-
+       $login = mysqli_real_escape_string($conn, $_POST['login']);
+       $senha = mysqli_real_escape_string($conn, md5($_POST['senha']));
+       //$login = $_POST['login'];
+       //$senha = md5($_POST['senha']);
+       
+       $sql = "SELECT * FROM usuarios WHERE login = '$login'";
+           
         $result = mysqli_query($conn, $sql);
         
         $num_registros = mysqli_num_rows($result);
-        //var_dump($num_registros);
-       
+               
             if ($num_registros == 1) {
                 $linha = mysqli_fetch_assoc($result);
                 

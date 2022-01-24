@@ -14,4 +14,3 @@ if( $conn = mysqli_connect($server, $user, $pass, $bd)) {
 }
 
 ?>
-
