@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <title>Menu Drop Down</title>
+</head>
+<body>
+
+    <!-- Parte 1: navbar-->
+    <div class="navbar">
+        <a href="home.php">Home</a>
+        <a href="agenda.html">Agenda</a>
+
+
+        <!-- Parte 2: Button DropDown-->
+        <div class="dropdown">
+            <button class="drop-button">
+                Cadastro <!-- Este botao é o DropDown-->
+            </button>
+
+            <!-- Parte 3: Conteudo do submenu-->
+            <div class="drop-content">
+                <a href="cliente.php">Clientes</a>
+                <a href="servicos.php">Serviços</a>
+                <a href="produtos.php">Produtos</a>
+                <a href="profissional.php">Profissionais</a>
+
+            </div><!-- Fecha o drop-content -->
+        </div> <!-- fecha o dropdown-->
+
+        <a href="../BackEnd/logout.php">Logout</a>
+    </div>    <!-- fecha navbar-->
+
+
+
+</body>
+</html>
