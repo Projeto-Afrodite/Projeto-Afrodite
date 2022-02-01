@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo { /* Confogurando o texto que é a logo da empresa AFRODITE*/
+    margin-left: 40px;
+}
+
+.navbar-nav {
+    margin-left: 100px;
+    margin-right: 0px;
+}
+
+.nav-link{
+    margin-left: 20px;
+}
+
+.navbar-nav li:hover>ul.dropdown-menu{
+    display: block;
+}
+
+.background-home {
+    background: url("../_images/background2.jpg") no-repeat center center; /*selecionando a imagem de fundo, sem repetir, centralizando no eixo X e Y por isso sse repete o comando center*/
+    background-size: cover; /*caso a resolução do monitor seja maior que a imagem*/
+    height: 92vh;
+}
+
+footer {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}

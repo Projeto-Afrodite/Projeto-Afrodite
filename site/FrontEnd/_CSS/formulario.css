@@ -1,0 +1,104 @@
+#titulo {
+    margin-left: 7%;
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #750370;
+    mix-blend-mode: normal;
+}
+
+
+fieldset {
+    border: 0;
+}
+
+#formulario {
+    margin: 20%;
+    margin-top: 2%;
+    justify-content: center;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: black;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+.campo label {
+    margin-bottom: 0.2em;
+    color: #000000;
+    font-size: small;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo input[type="date"], .campo input[type="time"], .campo select, .campo textarea {
+    padding: 0.6em;
+    box-shadow: 2px rgba(0,0,0,0.2);
+    display: block;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border: 1px solid #FF00F5;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+/*Pseudo classe focus deixa o elemento em evidencia*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: rgb(248, 237, 246);
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #FF00F5;
+    border: 0;
+    margin-bottom: 2em;
+    color: #fdfdfd;
+    padding: 0.4em 1em; 
+    box-shadow: rgba(0,0,0,0.2);
+    text-shadow: rgba(0,0,0,0.2);
+    position: relative;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 22px;
+    font-family: Titillium Web;
+    font-style: normal;
+
+    /* identical to box height */
+    text-align: center;
+   
+}
+
+
+.botao:hover {
+    background: #38013b;
+    box-shadow: inset 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select {
+    cursor: pointer;
+}
+
+#check {
+    display: inline-block;
+}
