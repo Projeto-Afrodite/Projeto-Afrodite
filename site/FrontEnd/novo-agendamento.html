@@ -88,42 +88,39 @@
           
           <div id="formulario">
             <div class="campo">
-              <form method="get" action=""> <!--COLOCAR A LIBGUAGEM DO SERVICOR-->
-                  <fieldset class="grupo">
-                      <div class="campo">
-                          <label for="nome"><strong>Nome:</strong></label>
-                          <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
-                      </div>
-                  </fieldset>
-                  <fieldset class="grupo"> 
-                  
-                      <div>
-                          <label for="pe"><strong>Pé</strong></label>
-                          <input type="checkbox" name="pe" id="pe">
-                      </div>
-
-                      <div>
-                          <label for="mao"><strong>Mão</strong></label>
-                          <input type="checkbox" name="mao" id="mao">
+              <form class="row g-3" method="get" action=""> <!--COLOCAR A LIBGUAGEM DO SERVICOR-->
+                 
+                      <div class="col-md-8">
+                          <label class="form-label" for="nome"><strong>Nome:</strong></label>
+                          <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o nome" required>
                       </div>
                       
-                      <div>
-                          <label for="cabelo"><strong>Cabelo</strong></label>
-                          <input type="checkbox" name="cabelo" id="cabelo">
+                      <div class="col-md-8">
+                          <input type="checkbox" name="pe" id="pe">
+                          <label class="form-label" for="pe"><strong>Pé</strong></label>
+                      </div>
+
+                      <div class="col-md-8">
+                        <input type="checkbox" name="mao" id="mao">
+                        <label class="form-label" for="mao"><strong>Mão</strong></label>
+                      </div>
+                      
+                      <div class="col-md-8">
+                        <input type="checkbox" name="cabelo" id="cabelo">  
+                        <label class="form-label" for="cabelo"><strong>Cabelo</strong></label>
                       </div>
                                   
-                      <div> 
-                          <label for="depilacao"><strong>Depilação</strong></label>
-                          <input type="checkbox" name="depilacao" id="depilacao">
+                      <div class="col-md-8"> 
+                        <input type="checkbox" name="depilacao" id="depilacao">   
+                        <label class="form-label" for="depilacao"><strong>Depilação</strong></label>
                       </div>                  
-
-                  
-                  </fieldset>
-
-                  <div class="campo">
-                      <label for=""><strong>Observações:</strong></label>
-                      <textarea name="observacoes" id="observacoes" cols="30" rows="4"></textarea>
-                  </div>
+                             
+                      <div class="campo">
+                        <div class="col-md-8">
+                          <label class="form-label" for="observacao"><strong>Observações:</strong></label>
+                          <textarea class="form-control" type="text" name="observacao" id="observacao" cols="30" rows="4"></textarea>
+                        </div>
+                      </div>
           
                   <div>
                       <button class="botao" type="submit">Agendar</button>

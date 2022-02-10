@@ -77,24 +77,24 @@ input, select, textarea, button {
     font-size: 1.2em;
     background: #FF00F5;
     border: 0;
-    margin-top: 5px;
-    margin-bottom: 2em;
+    margin-top: 5%;
+    margin-bottom: 2%;
     color: #fdfdfd;
     padding: 0.4em 1em; 
-    box-shadow: rgba(0,0,0,0.2);
+    box-shadow: rgba(0,0,0,0.5);
     text-shadow: rgba(0,0,0,0.2);
     position: relative;
     top: 90%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    border-radius: 22px;
+    border-radius: 10px;
     font-family: Titillium Web;
     font-style: normal;
 
     /* identical to box height */
     text-align: center;
-   
+    text-decoration: none;
 }
 
 
