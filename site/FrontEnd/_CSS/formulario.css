@@ -11,19 +11,31 @@
     mix-blend-mode: normal;
 }
 
-
-fieldset {
-    border: 0;
-}
-
-#formulario {
+.cabecalho {
     margin: 20%;
+    margin-bottom: 2px;
     margin-top: 2%;
     justify-content: center;
     background-color: white;
     font-family: sans-serif;
     font-size: 1em;
-    color: black;
+    color: #38013b;
+}
+
+#formulario {
+    margin: 25%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 20px;
+    justify-content: center;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #38013b;
+    border: 1px solid #FF00F5;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
 }
 
 input, select, textarea, button {
@@ -32,16 +44,12 @@ input, select, textarea, button {
 
 .campo{
     margin-bottom: 1em;
+    
 }
 .campo label {
     margin-bottom: 0.2em;
     color: #000000;
     font-size: small;
-}
-
-fieldset.grupo .campo {
-    float: left;
-    margin-right: 1em;
 }
 
 .campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo input[type="date"], .campo input[type="time"], .campo select, .campo textarea {
@@ -69,6 +77,7 @@ fieldset.grupo .campo {
     font-size: 1.2em;
     background: #FF00F5;
     border: 0;
+    margin-top: 5px;
     margin-bottom: 2em;
     color: #fdfdfd;
     padding: 0.4em 1em; 
