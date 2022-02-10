@@ -81,55 +81,56 @@
         
         </header>
 
-        <div id="formulario">
-            <div class="cabecalho">
-    
+          <div class="cabecalho">
             <h1 id="titulo">NOVO AGENDAMENTO</h1>
             <br>
+          </div>
+          
+          <div id="formulario">
+            <div class="campo">
+              <form method="get" action=""> <!--COLOCAR A LIBGUAGEM DO SERVICOR-->
+                  <fieldset class="grupo">
+                      <div class="campo">
+                          <label for="nome"><strong>Nome:</strong></label>
+                          <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
+                      </div>
+                  </fieldset>
+                  <fieldset class="grupo"> 
+                  
+                      <div>
+                          <label for="pe"><strong>Pé</strong></label>
+                          <input type="checkbox" name="pe" id="pe">
+                      </div>
+
+                      <div>
+                          <label for="mao"><strong>Mão</strong></label>
+                          <input type="checkbox" name="mao" id="mao">
+                      </div>
+                      
+                      <div>
+                          <label for="cabelo"><strong>Cabelo</strong></label>
+                          <input type="checkbox" name="cabelo" id="cabelo">
+                      </div>
+                                  
+                      <div> 
+                          <label for="depilacao"><strong>Depilação</strong></label>
+                          <input type="checkbox" name="depilacao" id="depilacao">
+                      </div>                  
+
+                  
+                  </fieldset>
+
+                  <div class="campo">
+                      <label for=""><strong>Observações:</strong></label>
+                      <textarea name="observacoes" id="observacoes" cols="30" rows="4"></textarea>
+                  </div>
+          
+                  <div>
+                      <button class="botao" type="submit">Agendar</button>
+                  </div>
+              </form>
             </div>
-        
-            <form method="get" action=""> <!--COLOCAR A LIBGUAGEM DO SERVICOR-->
-                <fieldset class="grupo">
-                    <div class="campo">
-                        <label for="nome"><strong>Nome:</strong></label>
-                        <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
-                    </div>
-                </fieldset>
-                <fieldset class="grupo"> 
-                
-                    <div>
-                        <label for="pe"><strong>Pé</strong></label>
-                        <input type="checkbox" name="pe" id="pe">
-                    </div>
-
-                    <div>
-                        <label for="mao"><strong>Mão</strong></label>
-                        <input type="checkbox" name="mao" id="mao">
-                    </div>
-                    
-                    <div>
-                        <label for="cabelo"><strong>Cabelo</strong></label>
-                        <input type="checkbox" name="cabelo" id="cabelo">
-                    </div>
-                                
-                    <div> 
-                        <label for="depilacao"><strong>Depilação</strong></label>
-                        <input type="checkbox" name="depilacao" id="depilacao">
-                    </div>                  
-
-                
-                </fieldset>
-
-                <div class="campo">
-                    <label for=""><strong>Observações:</strong></label>
-                    <textarea name="observacoes" id="observacoes" cols="30" rows="4"></textarea>
-                </div>
-        
-                <div>
-                    <button class="botao" type="submit">Agendar</button>
-                </div>
-            </form>
-        </div>
+         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 
