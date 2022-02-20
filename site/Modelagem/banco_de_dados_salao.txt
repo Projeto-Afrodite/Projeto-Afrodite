@@ -1,0 +1,43 @@
+CREATE DATABASE salao;
+
+USE salao;
+
+CREATE TABLE `salao`.`clientes` ( 
+`cod_cliente` 		INT 		NOT NULL AUTO_INCREMENT 
+, `nome` 			VARCHAR(50) NOT NULL 
+, `sobrenome` 		VARCHAR(50) NOT NULL 
+, `telefone` 		VARCHAR(20) NOT NULL 
+, `email` 			VARCHAR(50) NOT NULL 
+, `nascimento` DATE 	NOT NULL 
+, `observacao` 		VARCHAR(200) NOT NULL 
+, `ind_ativo` 		INT 		NOT NULL default 1 
+, PRIMARY KEY (`cod_cliente`)) ENGINE = InnoDB;
+
+CREATE TABLE `salao`.`profissionais` ( 
+`cod_profissionais` INT 		NOT NULL AUTO_INCREMENT 
+, `nome` 			VARCHAR(50) NOT NULL 
+, `sobrenome` 		VARCHAR(50) NOT NULL 
+, `telefone` 		VARCHAR(20) NOT NULL 
+, `email` 			VARCHAR(50) NOT NULL 
+, `cpf` 			VARCHAR(20) NOT NULL 
+, `observacoes` 		VARCHAR(200) NOT NULL 
+, `ind_ativo` 		INT 		NOT NULL default 1 
+, PRIMARY KEY (`cod_profissionais`)) ENGINE = InnoDB;
+
+CREATE TABLE `salao`.`produtos` ( 
+`cod_produto`   INT 		 NOT NULL AUTO_INCREMENT 
+, `produto` 	VARCHAR(50)  NOT NULL 
+, `ean` 		VARCHAR(15)  NOT NULL 
+, `valor` 		DECIMAL(2) 	 NOT NULL 
+, `descricao` 	VARCHAR(100) NOT NULL 
+, `ind_ativo` 	INT 		 NOT NULL default 1 
+, PRIMARY KEY (`cod_produto`)) ENGINE = InnoDB;
+
+CREATE TABLE `salao`.`servicos` ( 
+`cod_servico`   INT 		 NOT NULL AUTO_INCREMENT 
+, `servico` 	VARCHAR(50)  NOT NULL 
+, `duracao` 	VARCHAR(15)  NOT NULL 
+, `valor` 		DECIMAL(2) 	 NOT NULL 
+, `descricao` 	VARCHAR(100) NOT NULL 
+, `ind_ativo` 	INT 		 NOT NULL default 1 
+, PRIMARY KEY (`cod_servico`)) ENGINE = InnoDB;
